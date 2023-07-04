@@ -22,3 +22,7 @@ const Project = g.model("Project", {
   category: g.string().search(),
   user: g.relation(() => User),
 });
+
+export default config({
+  schema: g,
+});
